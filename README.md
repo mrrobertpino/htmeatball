@@ -34,3 +34,10 @@ Use Style with CSS or the CSS tab to edit selector/property blocks, color picker
 
 ## How-to PDF link
 The purple **How-to PDF** button links to `./howto.pdf`. Upload a file named exactly `howto.pdf` to the same GitHub repository folder as `index.html` (the published site root). Replace that file whenever the manual changes; the button automatically points to the updated file without editing the HTML. GitHub Pages deployment/browser caching can briefly delay updates. The ZIP deliberately does not include a dummy PDF, so you can upload your own.
+
+
+### Example dog image
+The Example button loads a static sample with an image at `https://rpino2.github.io/htmeatball/dog.png`. Upload `dog.png` alongside `index.html` in the GitHub Pages repository. The included `dog.png` is cropped from the provided example screenshot; replacing the file at the same URL will update the image without code changes.
+
+### Images in the preview
+Use **Choose image from your computer** on an Image block to embed a local image into the HTML. This displays in the preview, survives export/import, and does not need separate hosting. Alternatively, use a direct public image URL. Relative image names such as `dog.png` must be uploaded next to `index.html` on GitHub. The Example uses the included `dog.png`.

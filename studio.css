@@ -76,3 +76,25 @@ header #help-link:focus-visible{outline:3px solid #fcbb38;outline-offset:2px}
 [data-theme="dark"] .mini-guide code{background:#152233;border-color:#435871;color:#f0f5ff}
 [data-theme="dark"] .html-guide{background:#1d2f46;border-color:#35557a}
 [data-theme="dark"] .css-guide{background:#2c2543;border-color:#54457d}
+
+/* Three clearly separated action groups, plus secondary utilities. */
+header{height:auto;min-height:72px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+header .actions{align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px}
+header .action-group{display:flex;align-items:center;gap:7px;padding:7px;border:1px solid #dce1ec;border-radius:11px;background:#f5f7fb}
+header .action-utilities{display:flex;align-items:center;gap:5px;margin-left:6px}
+header .action-group button,header .action-group a{white-space:nowrap;font-size:12px}
+header #load-example{background:#2d955d;color:white;border-color:#21814e;box-shadow:0 2px 0 #176039}
+header #load-example:hover{background:#3ca76e}
+header #import-css{background:#3378c9;color:white;border-color:#2766b0;box-shadow:0 2px 0 #1b4d88}
+header #import-css:hover{background:#4891e2}
+header #download,header #export-css{background:#26876b;color:#fff;border-color:#1b7158;box-shadow:0 2px 0 #155440}
+header #download:hover,header #export-css:hover{background:#31a484}
+header #load-example:focus-visible,header #import-css:focus-visible,header #download:focus-visible{outline:3px solid #fcbb38;outline-offset:3px}
+[data-theme="dark"] header .action-group{background:#202d3e;border-color:#465970}
+@media(max-width:1100px){header .actions{justify-content:flex-start;width:100%}}
+@media(max-width:520px){header .action-group{flex-wrap:wrap}header .action-utilities{margin-left:0}}
+
+/* Let students upload an image and embed it directly into their HTML. */
+.image-upload{display:flex;flex-direction:column;gap:5px;flex:1 1 100%;font-size:11px;font-weight:750;color:#fff}
+.image-upload input{font-size:11px;max-width:100%;background:#fff;color:#25364b;padding:5px}
+.image-help{font-size:10px;line-height:1.4;color:#fff;opacity:.9;width:100%}
