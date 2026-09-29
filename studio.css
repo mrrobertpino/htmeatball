@@ -95,6 +95,4 @@ header #load-example:focus-visible,header #import-css:focus-visible,header #down
 @media(max-width:520px){header .action-group{flex-wrap:wrap}header .action-utilities{margin-left:0}}
 
 /* Let students upload an image and embed it directly into their HTML. */
-.image-upload{display:flex;flex-direction:column;gap:5px;flex:1 1 100%;font-size:11px;font-weight:750;color:#fff}
-.image-upload input{font-size:11px;max-width:100%;background:#fff;color:#25364b;padding:5px}
 .image-help{font-size:10px;line-height:1.4;color:#fff;opacity:.9;width:100%}
