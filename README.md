@@ -30,3 +30,7 @@ Color-coded connecting blocks, searchable category library, workspace zoom (70-1
 ## CSS and appearance
 Use Style with CSS or the CSS tab to edit selector/property blocks, color pickers, and CSS text. CSS is enabled on startup; its switch toggles styles in preview and export. Dark mode changes only the editor and remembers your preference locally when browser storage is available; otherwise it still works for the session. The initial theme follows your system preference.
 
+
+
+## How-to PDF link
+The purple **How-to PDF** button links to `./howto.pdf`. Upload a file named exactly `howto.pdf` to the same GitHub repository folder as `index.html` (the published site root). Replace that file whenever the manual changes; the button automatically points to the updated file without editing the HTML. GitHub Pages deployment/browser caching can briefly delay updates. The ZIP deliberately does not include a dummy PDF, so you can upload your own.
