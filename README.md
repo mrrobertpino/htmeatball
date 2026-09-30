@@ -2,11 +2,6 @@
 
 A standalone classroom HTML and CSS block editor. No install, account, API key, CDN, or build step.
 
-## Put it on Netlify
-Unzip this download. Drag the `html-playset` folder into Netlify's manual deploy area. The folder must contain `index.html` at its top level. For a Git-connected deployment, leave the build command empty and set the publish directory to `.`.
-
-You can also open index.html directly in Chrome, Edge, Firefox, or Safari.
-
 ## Classroom use
 - Drag blocks into the page, or click a toolbox block to append it.
 - Edit text and URLs in white fields. Pick a heading level in the toolbox or on a heading block.
@@ -29,11 +24,6 @@ Color-coded connecting blocks, searchable category library, workspace zoom (70-1
 
 ## CSS and appearance
 Use Style with CSS or the CSS tab to edit selector/property blocks, color pickers, and CSS text. CSS is enabled on startup; its switch toggles styles in preview and export. Dark mode changes only the editor and remembers your preference locally when browser storage is available; otherwise it still works for the session. The initial theme follows your system preference.
-
-
-
-## How-to PDF link
-The purple **How-to PDF** button links to `./howto.pdf`. Upload a file named exactly `howto.pdf` to the same GitHub repository folder as `index.html` (the published site root). Replace that file whenever the manual changes; the button automatically points to the updated file without editing the HTML. GitHub Pages deployment/browser caching can briefly delay updates. The ZIP deliberately does not include a dummy PDF, so you can upload your own.
 
 
 ### Example dog image
