@@ -120,8 +120,10 @@ header #download,header #export-css{background:#ffc652;color:#382c11;border-colo
 header #download:hover,header #export-css:hover{background:#ffd574;color:#382c11}
 .block-help{flex:0 0 23px;width:23px;height:23px;border:1px solid #ffffff99;border-radius:50%;padding:0;background:#fff;color:#26344a;font-size:13px;line-height:21px;text-align:center}
 .block-help:hover{background:#fff0bf;color:#26344a}
-.palette{padding-right:38px}
-.palette > .block-help{position:absolute;right:8px;top:50%;transform:translateY(-50%)}
+.palette-row{display:flex;align-items:center;gap:9px;margin-bottom:11px}
+.palette-row > .palette{flex:1;min-width:0;width:auto;margin:0;padding-right:7px}
+.palette-row > .block-help{position:static;transform:none;border-color:#aabbd0}
+.palette-row > .palette code{overflow-wrap:anywhere}
 .palette .plus{display:none}
 #block-explanation{width:min(600px,90vw);max-width:600px;max-height:85dvh;overflow:auto}
 #block-explanation p{line-height:1.6}
