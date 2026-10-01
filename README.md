@@ -1,5 +1,12 @@
 # HTMeatbalL — Sit. Stay. Site.
 
+## Inspect, format, and block help
+- **Inspect** in the preview lets you click an element to select its opening tag in HTML text mode. The selected element receives a yellow outline; use its tag, class, or ID when writing CSS. Stop inspect to use the preview normally. Inspection code is never included in exported pages.
+- **Format** cleans up the current HTML, CSS, or JavaScript and opens text mode. Invalid code stays unchanged with an error message. Formatting can be undone.
+- **?** beside each library or workspace block opens an explanation, code sample, and visual example adapted from Textball.
+- Both export buttons use yellow styling.
+- Deploy the entire folder, including `enhancements.js`, `block-help.js`, and `vendor/`. Prettier 3.6.2 is bundled locally under its MIT license in `vendor/LICENSE`; formatting needs no network connection.
+
 A standalone classroom HTML and CSS block editor. No install, account, API key, CDN, or build step.
 
 ## Classroom use
