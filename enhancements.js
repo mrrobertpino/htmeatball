@@ -43,13 +43,17 @@ function showBlockHelp(key, language) {
 
 document.querySelector('#format-code').onclick = async () => {
   const button = document.querySelector('#format-code');
-  const language = tab, original = state[language];
+  const language = tab;
+  if (mode === 'text' || language === 'js') state[language] = document.querySelector('#source').value;
+  const original = state[language];
+  clearTimeout(editTimer);
+  commit();
   button.disabled = true;
   try {
     const formatted = await prettier.format(original, {
       parser: {html:'html',css:'css',js:'babel'}[language],
       plugins: Object.values(prettierPlugins), tabWidth: 2,
-      htmlWhitespaceSensitivity: 'strict'
+      htmlWhitespaceSensitivity: 'css'
     });
     if (state[language] !== original) { notify('Code changed while formatting. Please try again.'); return; }
     commit(); state[language] = formatted; commit();
